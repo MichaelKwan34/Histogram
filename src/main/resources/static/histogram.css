@@ -1,0 +1,103 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main, input[type=text] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lowerbound, .histogram, .newgrade{
+    background-color: #EAEFF1;
+    border-radius: 3px;
+    border: 1px solid #D8E2E7;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    padding-right: 55px;
+    margin-right: 10px;
+}
+
+.container {
+    display: inline-grid;
+}
+
+.lowerbound {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.histogram {
+    padding-bottom: 15px;
+    padding-right: 213px;
+    margin-bottom: 10px;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+th {
+    color: #B62F36;
+    padding-bottom: 20px;
+    font-size: 14px;
+}    
+
+h4{
+    padding-left: 3px;
+
+}
+
+td {
+    position: relative;
+    left: 24px;
+    font-size: 12px;
+    
+}
+
+input[type=text],input[type=number] { 
+    width: 40%;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    padding-right: 10px;
+    font-size: 12px;
+    position: relative;
+    top: 5px;    
+    right: 10px;
+}
+
+
+
+.lowerbound{
+    padding-top: 8px;
+}
+
+.letterGrade{
+    padding-top: 15px;
+}
+
+.histogramLetterGrade {
+    padding-top: 8px;
+}
+
+.output {
+    position: relative;
+    left: 70px;
+}
+
+.newgrade {
+    padding-top: 10px;
+    font-size: 12px;
+    padding-right: 35px;
+    padding-bottom: 153px;
+}
+
+#newGrade {
+    position: static;
+    text-align: center;
+}

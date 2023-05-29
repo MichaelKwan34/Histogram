@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h4>Histogram Generator</h4>
+        <div class="container">
+            <table class="lowerbound">
+                <th>Lower bounds</th>
+                <tr>
+                    <td>Max</td>
+                    <td> <input id="max" type="text" value="100.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">A+</td>
+                    <td class="lowerBound"> <input id="A-plus" type="text" value="95.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">A</td>
+                    <td class="lowerBound"> <input id="A" type="text" value="90.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">A-</td>
+                    <td class="lowerBound"> <input id="A-minus" type="text" value="85.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">B+</td>
+                    <td class="lowerBound"> <input id="B-plus" type="text" value="80.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">B</td>
+                    <td class="lowerBound"> <input id="B" type="text" value="75.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">B-</td>
+                    <td class="lowerBound"> <input id="B-minus" type="text" value="70.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">C+</td>
+                    <td class="lowerBound"> <input id="C-plus" type="text" value="65.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">C</td>
+                    <td class="lowerBound"> <input id="C" type="text" value="60.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">C-</td>
+                    <td class="lowerBound"> <input id="C-minus" type="text" value="55.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">D</td>
+                    <td class="lowerBound"> <input id="D" type="text" value="50.00"></td>
+                </tr>
+                <tr>
+                    <td class="letterGrade">F</td>
+                    <td class="lowerBound"> <input id="F" type="text" value="0.00"></td>
+                </tr>
+            </table>
+
+            <table class="histogram">
+                <th>Histogram</th>
+                <tr>
+                    <td>A+</td>
+                    <td id="histogram-A-plus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">A </td>
+                    <td id="histogram-A" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">A-</td>
+                    <td id="histogram-A-minus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">B+</td>
+                    <td id="histogram-B-plus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">B</td>
+                    <td id="histogram-B" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">B-</td>
+                    <td id="histogram-B-minus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">C+</td>
+                    <td id="histogram-C-plus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">C</td>
+                    <td id="histogram-C" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">C-</td>
+                    <td id="histogram-C-minus" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">D</td>
+                    <td id="histogram-D" class="output"></td>
+                </tr>
+                <tr>
+                    <td class="histogramLetterGrade">F</td>
+                    <td id="histogram-F" class="output"></td>
+                </tr>
+            </table>
+
+            <form action="/submit" class="newgrade" onsubmit="return false">
+                New Grade: <input id="newGrade" type="number" maxlength="6" step="0.01">
+                <input id="submit" type="submit" value="submit">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
